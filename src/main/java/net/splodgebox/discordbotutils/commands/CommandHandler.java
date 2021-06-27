@@ -1,6 +1,7 @@
 package net.splodgebox.discordbotutils.commands;
 
 import lombok.Getter;
+import net.splodgebox.discordbotutils.DiscordBot;
 import net.splodgebox.discordbotutils.commands.data.TestCommand;
 
 import java.util.ArrayList;
@@ -15,6 +16,7 @@ public class CommandHandler {
 
     public CommandHandler() {
         commands = new ArrayList<>();
+        DiscordBot.getJda().addEventListener(new CommandListener(this));
 
         registerCommand(
                 new TestCommand()
