@@ -1,4 +1,4 @@
-# DiscordBotUtils
+# JDA - Command
 Easy to use utils for Discord JDA. Includes command system and embed message builder
 
 ## How to create your own command
